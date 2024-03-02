@@ -1,3 +1,2 @@
 # ADS-Blocker
-100% blocks ads
-it blocks youtube ads
+100% blocks youtube ads
