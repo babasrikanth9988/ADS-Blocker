@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Ad Blocker",
+  "version": "1.0",
+  "description": "Blocks ads on websites",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "B.png",
+    "48": "B.png",
+    "128": "B.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
